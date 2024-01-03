@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scintific Calc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0">
+        </div>
+        <div class="btns">
+            <div class="row">
+               <button style="background: red;color: white;" onclick="backspc()">CE</button>
+               <button class="hov" onclick="fact()">x!</button>
+               <button class="btn hov">(</button>
+               <button class="btn hov">)</button>
+               <button class="btn hov">%</button>
+               <button style="background: red;color: white;" onclick="screen.value=''">AC</button>
+            </div>
+            <div class="row">
+                <button class="hov" onclick="sin()">sin</button>
+                <button class="hov" onclick="pi()">π</button>
+                <button class="btn hov">7</button>
+                <button class="btn hov">8</button>
+                <button class="btn hov">9</button>
+                <button class="btn hov">÷</button>
+             </div>
+             <div class="row">
+                <button class="hov" onclick="cos()">cos</button>
+                <button class="hov" onclick="log()">log</button>
+                <button class="btn hov">4</button>
+                <button class="btn hov">5</button>
+                <button class="btn hov">6</button>
+                <button class="btn hov">x</button>
+             </div>
+             <div class="row">
+                <button class="hov" onclick="tan()">tan</button>
+                <button class="hov" onclick="sqrt()">√</button>
+                <button class="btn hov">1</button>
+                <button class="btn hov">2</button>
+                <button class="btn hov">3</button>
+                <button class="btn hov">-</button>
+             </div>
+             <div class="row">
+                <button class="hov" onclick="e()">e</button>
+                <button class="hov" onclick="pow()">x<span style="position: relative;bottom: .4em;right: .1em;">y</span></button>
+                <button class="btn hov">0</button>
+                <button class="btn hov">.</button>
+                <button class="hov" onclick="screen.value=eval(screen.value)">=</button>
+                <button class="btn hov">+</button>
+             </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
